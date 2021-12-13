@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.image-wrapper {
+  position: relative;
+
+  width: 409px;
+  height: 396px;
+}
+
+.album-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-52%, -48%) scale(0.75, 0.8);
+  border-radius: 100px;
+
+  transform-origin: center;
+  perspective: 500px;
+  perspective-origin: -5% 100%;
+
+  width: 100%;
+  /* height: 0%; */
+  /* overflow: hidden; */
+
+  filter: drop-shadow(-45px 10px 8px rgba(18, 18, 18, 0.12));
+}
+
+.album-cover-child {
+  width: 100%;
+  height: auto;
+  transform: rotateX(0deg) rotateY(358deg) scale(1, 1.05);
+  transform-style: preserve-3d;
+  border-radius: 30px;
+}
+
+.image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.rear-image {
+  position: absolute;
+
+  transform-origin: center;
+  transform: scale(0.8);
+
+  top: -4px;
+  left: -160px;
+}
+
+.surfaceshadow {
+  mix-blend-mode: overlay;
+  opacity: 0.8;
+}
+
+.glow {
+  mix-blend-mode: screen;
+}
+
+.color {
+  mix-blend-mode: color;
+
+  filter: hue-rotate(0deg) saturate(100%);
+}
+
+.case {
+  /* filter: brightness(50%) contrast(150%); */
+  filter: saturate(10%);
+}
+
+.innershadow {
+  mix-blend-mode: multiply;
+}
