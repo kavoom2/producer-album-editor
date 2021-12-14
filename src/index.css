@@ -17,6 +17,10 @@ code {
 
   width: 409px;
   height: 396px;
+
+  @media screen and (max-width: 767px) {
+    transform: scale(0.5);
+  }
 }
 
 .album-cover {

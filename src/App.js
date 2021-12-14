@@ -57,7 +57,7 @@ function App() {
     caseFolder.add(object, "hue", 0, 360, 1).onChange((value) => setHue(value));
 
     caseFolder
-      .add(object, "saturation", 0, 100, 1)
+      .add(object, "saturation", 0, 200, 1)
       .onChange((value) => setSaturation(value));
 
     albumCoverFolder
